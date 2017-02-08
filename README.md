@@ -62,8 +62,8 @@
     textField5.backgroundColor = RandomColor;
     [self.view addSubview:textField5];
 
-    // 模式六
-    XXTextField *textField6 = [[XXTextField alloc] init];
+    // 模式六（自定义数据源时注意数据源的格式要与示例中的格式一致）
+    XXTextField *textField6 = [[XXTextField alloc] init];
     textField6.frame = CGRectMake(x, textField5.frame.origin.y + margin, width, height);
     textField6.mode = XXPickerViewModeDataSourceFor2Column;
     textField6.dataSource = [dataSourceFor2Column mutableCopy];
